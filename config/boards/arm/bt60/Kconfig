@@ -8,3 +8,8 @@ config BOARD_ENABLE_DCDC
 	
 config ZMK_SLEEP
 	bool "y"
+config ZMK_IDLE_TIMEOUT
+	int 30000
+	
+config ZMK_IDLE_SLEEP_TIMEOUT
+	int 60000
