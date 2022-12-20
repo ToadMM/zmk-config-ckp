@@ -9,6 +9,7 @@
 		ble_prof_0: ble_prof_0 {
 			label = "ZM_ble_prof_0";
 			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
 			bindings
 				= <&macro_press &bt BT_SEL 0>
 				, <&macro_press &rgb_ug RGB_COLOR_HSB(262,100,100)>
@@ -17,6 +18,7 @@
 		ble_prof_1: ble_prof_1 {
 			label = "ZM_ble_prof_1";
 			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
 			bindings
 				= <&macro_press &bt BT_SEL 1>
 				, <&macro_press &rgb_ug RGB_COLOR_HSB(128,100,100)>
