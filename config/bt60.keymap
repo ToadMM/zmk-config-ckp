@@ -13,9 +13,9 @@
 			bindings
 				= <&macro_press &bt BT_SEL 0>
 				, <&macro_press &rgb_ug RGB_COLOR_HSB(262,100,50)>
-				, <&macro_press &rgb_ug RGB_EFF>
-				, <&macro_wait_time 5000>
-				, <&macro_press &rgb_ug RGB_EFR>
+				, <&macro_press &rgb_ug RGB_ON>
+				, <&macro_wait_time 500>
+				, <&macro_press &rgb_ug RGB_OFF>
 				;
 			};
 		ble_prof_1: ble_prof_1 {
@@ -25,9 +25,21 @@
 			bindings
 				= <&macro_press &bt BT_SEL 1>
 				, <&macro_press &rgb_ug RGB_COLOR_HSB(128,100,50)>
-				, <&macro_press &rgb_ug RGB_EFF>
-				, <&macro_wait_time 5000>
-				, <&macro_press &rgb_ug RGB_EFR>
+				, <&macro_press &rgb_ug RGB_ON>
+				, <&macro_wait_time 500>
+				, <&macro_press &rgb_ug RGB_OFF>
+				;
+			};
+		ble_prof_2: ble_prof_2 {
+			label = "ZM_ble_prof_2";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &bt BT_SEL 2>
+				, <&macro_press &rgb_ug RGB_COLOR_HSB(240,100,50)>
+				, <&macro_press &rgb_ug RGB_ON>
+				, <&macro_wait_time 500>
+				, <&macro_press &rgb_ug RGB_OFF>
 				;
 			};
 		};
